@@ -1,0 +1,29 @@
+/* global.css */
+
+/* Define color variables */
+:root {
+  --background-color: #0a0a0a;
+  --text-color: #e0e0e0;
+  --accent-color: #8ab4f8; /* Northern lights blue */
+  --accent-color-hover: #a6e22e; /* Northern lights green */
+}
+
+/* Global styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color-hover);
+}
+
+/* You can add other global styles here */

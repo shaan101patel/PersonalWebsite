@@ -1,0 +1,45 @@
+/* Activities.css */
+
+/* Ensure the page content starts below the navbar */
+.activities-page {
+  padding-top: 80px; /* Adjust if your navbar height is different */
+  color: var(--text-color);
+}
+
+.activities-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--accent-color);
+}
+
+.activities-page ul {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.activities-page li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.activities-page li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .activities-page h1 {
+    font-size: 32px;
+  }
+
+  .activities-page li {
+    font-size: 16px;
+  }
+}

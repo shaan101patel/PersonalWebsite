@@ -1,0 +1,29 @@
+/* Navbar.css */
+
+nav {
+  background-color: rgba(10, 10, 10, 0.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #8ab4f8; /* Northern lights accent color */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #a6e22e; /* Slightly different accent on hover */
+}
