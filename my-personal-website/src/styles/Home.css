@@ -1,4 +1,10 @@
 /* Home.css */
+@font-face {
+  font-family: 'Brittany';
+  src: url("C:\\Users\\shaan\\Documents\\PersonalWebsite\\my-personal-website\\src\\fonts\\BrittanySignature.ttf") format('truetype'); /* Update path as needed */
+  font-weight: normal;
+  font-style: normal;
+}
 
 .home-page {
   position: relative;
@@ -20,19 +26,23 @@
 
 .profile-section {
   text-align: center;
-  flex: 0.68;
+  flex: 0.73;
 }
 
 .name {
-  font-size: 6.3em; /* Increase font size */
-  font-family: 'Brittany Signature'; /* Valid cursive fonts */
+  font-size: 8.1em; /* Increase font size */
+  font-family: 'Brittany', cursive; /* Valid cursive fonts */
+  font-weight: normal;
   color: white;
   margin-bottom: 0em;
+  margin-top: 0.4em; /* Adjust to reduce space */
+  line-height: 1; /* Reduces line height to remove extra space */
 }
 
 .role {
   font-size: 2.5em; /* Increase font size */
   color: white;
+  margin-top: 1.5em;
   margin-bottom: 0.2em;
 }
 
@@ -54,31 +64,35 @@
 /*  color: white;
   font-size: 1.2em; /* Slightly increase font size */
 /*} */
-
-
 .button-section {
   display: flex;
   flex-direction: column;
   gap: 40px; /* Increase spacing between buttons */
   flex: 0;
-  align-items: right;
+  align-items: center; /* Center buttons */
 }
 
+/* Shared button styling for transparent background */
 .nav-button {
-  background-color: #777;
   color: white;
-  border: none;
-  padding: 49px 0px; /* Increase padding */
-  font-size: 1.5em; /* Increase font size */
+  border: 2px solid white; /* White border */
+  padding: 49px 30px; /* Adjust padding for spacing */
+  font-size: 1.5em; /* Font size */
   cursor: pointer;
-  border-radius: 39px;
-  transition: background-color 0.3s;
-  width: 500px; /* Increase button width */
+  border-radius: 38px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
   text-align: center;
+  width: 500px; /* Button width */
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .nav-button:hover {
-  background-color: #555;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter transparent background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
+/* Ensuring Links themselves don't have any default styles */
+.nav-button-link {
+  text-decoration: none; /* Remove underline */
+}
 

@@ -32,7 +32,7 @@ function Home() {
           className="profile-section"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 3 }}
         >
           <h1 className="name">Shaan Patel</h1>
           <h2 className="role">Software Developer</h2>
@@ -45,24 +45,24 @@ function Home() {
 
         {/* Button Navigation Section */}
          <motion.div
-                  className="button-section"
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1 }}
-                >
-                  <Link to="/work" className="nav-button-link">
-                    <button className="nav-button">Professional Experience</button>
-                  </Link>
-                  <Link to="/research-projects" className="nav-button-link">
-                    <button className="nav-button">Research and Projects</button>
-                  </Link>
-                  <Link to="/activities" className="nav-button-link">
-                    <button className="nav-button">Activities</button>
-                  </Link>
-                  <Link to="/contact" className="nav-button-link">
-                    <button className="nav-button">Contact</button>
-                  </Link>
-                </motion.div>
+                   className="button-section"
+                   initial={{ opacity: 0, x: 20 }}
+                   animate={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 8 }}
+                 >
+                   <Link to="/work" className="nav-button-link">
+                     <button className="nav-button button-1">Professional Experience</button>
+                   </Link>
+                   <Link to="/research-projects" className="nav-button-link">
+                     <button className="nav-button button-2">Research and Projects</button>
+                   </Link>
+                   <Link to="/activities" className="nav-button-link">
+                     <button className="nav-button button-3">Activities</button>
+                   </Link>
+                   <Link to="/contact" className="nav-button-link">
+                     <button className="nav-button button-4">Contact</button>
+                   </Link>
+                 </motion.div>
       </div>
 
       {/* Visitor count display */}
