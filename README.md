@@ -16,3 +16,8 @@ I would like to create a personal website in react to display myself, I want to 
 
 5. Contact Page: email, phone number, linkedIN, github
 
+
+npm install react-router-dom@6
+npm install framer-motion
+npm install @react-three/fiber three
+

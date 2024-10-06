@@ -2,63 +2,83 @@
 
 .home-page {
   position: relative;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #000; /* Fallback in case the star field doesn't cover */
 }
 
-.content-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  height: 100%;
+}
+
+.profile-section {
   text-align: center;
-  color: var(--text-color);
-  z-index: 1;
+  flex: 0.68;
+}
+
+.name {
+  font-size: 6.3em; /* Increase font size */
+  font-family: 'Brittany Signature'; /* Valid cursive fonts */
+  color: white;
+  margin-bottom: 0em;
+}
+
+.role {
+  font-size: 2.5em; /* Increase font size */
+  color: white;
+  margin-bottom: 0.2em;
 }
 
 .profile-picture {
+  width: 340px; /* Increase size */
+  height: 340px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  border: 4px solid white;
   object-fit: cover;
-  border: 4px solid var(--accent-color);
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 0.2em;
 }
 
-.content-overlay h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.content-overlay h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.content-overlay p {
-  font-size: 18px;
-}
-
+/*
 .visitor-count {
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  left: 300px; /* Move it further left */
+/*  color: white;
+  font-size: 1.2em; /* Slightly increase font size */
+/*} */
+
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Increase spacing between buttons */
+  flex: 0;
+  align-items: right;
+}
+
+.nav-button {
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 49px 0px; /* Increase padding */
+  font-size: 1.5em; /* Increase font size */
+  cursor: pointer;
+  border-radius: 39px;
+  transition: background-color 0.3s;
+  width: 500px; /* Increase button width */
   text-align: center;
-  font-size: 16px;
-  color: var(--accent-color);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .content-overlay h1 {
-    font-size: 36px;
-  }
-
-  .content-overlay h2 {
-    font-size: 20px;
-  }
-
-  .content-overlay p {
-    font-size: 16px;
-  }
+.nav-button:hover {
+  background-color: #555;
 }
+
+

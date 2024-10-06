@@ -1,9 +1,10 @@
 // Home.js
 import React, { useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
-import NorthernLights from '../components/NorthernLights';
+import StarField from '../components/StarField';
 import '../styles/Home.css';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
   const [visitorCount, setVisitorCount] = useState(0);
@@ -21,33 +22,54 @@ function Home() {
 
   return (
     <div className="home-page">
-      {/* Northern Lights background using React Three Fiber */}
-      <Canvas
-        camera={{ position: [0, 0, 1] }}
-        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-      >
-        <NorthernLights />
-      </Canvas>
+      {/* StarField background */}
+      <StarField />
 
-      {/* Content overlay */}
-      <motion.div
-        className="content-overlay"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <img src="C:\Users\shaan\Documents\website\my-personal-website\src\profile.jpg.JPG" alt="Profile" className="profile-picture" />
-        <h1>Your Name</h1>
-        <h2>Your University</h2>
-        <p>A brief statement about yourself.</p>
-      </motion.div>
+      {/* Main content container */}
+      <div className="content-container">
+        {/* Profile Section */}
+        <motion.div
+          className="profile-section"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="name">Shaan Patel</h1>
+          <h2 className="role">Software Developer</h2>
+          <img
+            src={require("C:\\Users\\shaan\\Documents\\PersonalWebsite\\my-personal-website\\src\\profilepic.JPG")} // Replace this with the correct path
+            alt="Profile"
+            className="profile-picture"
+          />
+        </motion.div>
+
+        {/* Button Navigation Section */}
+         <motion.div
+                  className="button-section"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <Link to="/work" className="nav-button-link">
+                    <button className="nav-button">Professional Experience</button>
+                  </Link>
+                  <Link to="/research-projects" className="nav-button-link">
+                    <button className="nav-button">Research and Projects</button>
+                  </Link>
+                  <Link to="/activities" className="nav-button-link">
+                    <button className="nav-button">Activities</button>
+                  </Link>
+                  <Link to="/contact" className="nav-button-link">
+                    <button className="nav-button">Contact</button>
+                  </Link>
+                </motion.div>
+      </div>
 
       {/* Visitor count display */}
-      <div className="visitor-count">
-        Visitor Count: {visitorCount}
-      </div>
+      <div className="visitor-count">Visitor Count: {visitorCount}</div>
     </div>
   );
 }
 
 export default Home;
+
