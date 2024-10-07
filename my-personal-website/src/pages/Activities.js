@@ -26,7 +26,7 @@ function Activities() {
           <div className="activities-item">
             <div className="activities-image-placeholder"></div>
             <div className="activities-text-content">
-              <Link to="/activities/icx" className="activities-subheading-link">
+              <Link to="https://www.instagram.com/ugaicx/" className="activities-subheading-link">
                 <h2 className="activities-subheading">President of ICX (3 years of involvement)</h2>
               </Link>
               <p>Details about your role and achievements in ICX.</p>
@@ -35,26 +35,26 @@ function Activities() {
           <div className="activities-item">
             <div className="activities-image-placeholder"></div>
             <div className="activities-text-content">
-              <Link to="/activities/akpsi" className="activities-subheading-link">
-                <h2 className="activities-subheading">Brother in AKPsi (Co-ed Business Fraternity)</h2>
+              <Link to="https://www.instagram.com/akpsi_uga/" className="activities-subheading-link">
+                <h2 className="activities-subheading">Brother of AKPsi</h2>
               </Link>
-              <p>Information about your involvement in AKPsi.</p>
+              <p>Information about your involvement in AKPsi(Co-ed Business Fraternity).</p>
             </div>
           </div>
           <div className="activities-item">
             <div className="activities-image-placeholder"></div>
             <div className="activities-text-content">
-              <Link to="/activities/runner" className="activities-subheading-link">
-                <h2 className="activities-subheading">Runner (Completed a Half Marathon)</h2>
-              </Link>
-              <p>Your experience and achievements in running.</p>
-            </div>
-          </div>
-          <div className="activities-item">
-            <div className="activities-image-placeholder"></div>
-            <div className="activities-text-content">
-              <Link to="/activities/chess" className="activities-subheading-link">
+              <Link to="https://www.instagram.com/ugachessdawgs/" className="activities-subheading-link">
                 <h2 className="activities-subheading">Member of Chess Club</h2>
+              </Link>
+              <p>Your experience and achievements in chess.</p>
+            </div>
+          </div>
+          <div className="activities-item">
+            <div className="activities-image-placeholder"></div>
+            <div className="activities-text-content">
+              <Link to="https://www.instagram.com/shaan_cooks25/" className="activities-subheading-link">
+                <h2 className="activities-subheading">Worlds Best Chef</h2>
               </Link>
               <p>Details about your membership in the Chess Club.</p>
             </div>

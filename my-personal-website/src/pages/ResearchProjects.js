@@ -35,8 +35,8 @@ function ResearchProjects() {
           <div className="research-item">
             <div className="research-image-placeholder"></div>
             <div className="research-text-content">
-              <Link to="/research/ai-effect-on-databases" className="research-subheading-link">
-                <h2 className="research-subheading">A Literature Review of AI's Effect on Databases</h2>
+              <Link to="https://docs.google.com/document/d/1p190W680R4snqRxC6JjE9QJHoNAy_flXSph-5deWTx0/edit?usp=sharings" className="research-subheading-link">
+                <h2 className="research-subheading">Literature Review of AI's Effect on Databases</h2>
               </Link>
               <p>An in-depth review of AI's impact on database systems.</p>
             </div>
@@ -44,7 +44,7 @@ function ResearchProjects() {
           <div className="research-item">
             <div className="research-image-placeholder"></div>
             <div className="research-text-content">
-              <Link to="/research/movie-booking-app" className="research-subheading-link">
+              <Link to="https://github.com/j40769/Movies1" className="research-subheading-link">
                 <h2 className="research-subheading">Full Stack Movie Booking Application</h2>
               </Link>
               <p>Details about your full stack application for booking movies.</p>

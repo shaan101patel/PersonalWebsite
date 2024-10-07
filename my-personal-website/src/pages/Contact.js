@@ -27,22 +27,22 @@ function Contact() {
             <div className="contact-image-placeholder"></div>
             <div className="contact-text-content">
               <h2 className="contact-subheading">Email:</h2>
-              <p>your.email@example.com</p>
+              <p>shaan101patel@gmail.com</p>
             </div>
           </div>
           <div className="contact-item">
             <div className="contact-image-placeholder"></div>
             <div className="contact-text-content">
               <h2 className="contact-subheading">Phone:</h2>
-              <p>(123) 456-7890</p>
+              <p>(678) 699-6118</p>
             </div>
           </div>
           <div className="contact-item">
             <div className="contact-image-placeholder"></div>
             <div className="contact-text-content">
               <h2 className="contact-subheading">LinkedIn:</h2>
-              <a href="https://www.linkedin.com/in/yourlinkedin" className="contact-link">
-                Your LinkedIn
+              <a href="https://www.linkedin.com/in/shaanpatel25/" className="contact-link">
+                shaanpatel25
               </a>
             </div>
           </div>
@@ -50,7 +50,7 @@ function Contact() {
             <div className="contact-image-placeholder"></div>
             <div className="contact-text-content">
               <h2 className="contact-subheading">GitHub:</h2>
-              <a href="https://github.com/yourgithub" className="contact-link">
+              <a href="https://github.com/shaan101patel" className="contact-link">
                 Your GitHub
               </a>
             </div>
