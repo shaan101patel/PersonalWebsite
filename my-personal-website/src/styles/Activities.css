@@ -1,45 +1,98 @@
 /* Activities.css */
 
-/* Ensure the page content starts below the navbar */
 .activities-page {
-  padding-top: 80px; /* Adjust if your navbar height is different */
-  color: var(--text-color);
-}
-
-.activities-page h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--accent-color);
-}
-
-.activities-page ul {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  list-style-type: none;
-}
-
-.activities-page li {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
   position: relative;
-  padding-left: 25px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
 }
 
-.activities-page li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--accent-color);
+/* Flex container similar to .content-container in Home */
+.activities-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  height: 100%;
 }
 
-@media (max-width: 768px) {
-  .activities-page h1 {
-    font-size: 32px;
-  }
+/* Left Section for Activities Content */
+.activities-profile-section {
+  text-align: left;
+  flex: 0.7;
+  color: white;
+}
 
-  .activities-page li {
-    font-size: 16px;
-  }
+.activities-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.activities-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Space between items */
+}
+
+.activities-image-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #ff66b2;
+  border-radius: 15px; /* Rounded corners */
+  margin-right: 20px;
+}
+
+.activities-text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-subheading {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.activities-subheading-link {
+  text-decoration: none;
+  color: white;
+}
+
+.activities-text-content p {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* Right Section for Navigation Buttons */
+.activities-button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between buttons */
+  align-items: center;
+  flex: 0;
+}
+
+/* Shared button styling for transparent background */
+.activities-nav-button {
+  color: white;
+  border: 2px solid white;
+  padding: 49px 30px; /* Adjust padding for spacing */
+  font-size: 1.5em; /* Font size */
+  cursor: pointer;
+  border-radius: 38px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  text-align: center;
+  width: 500px; /* Button width */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.activities-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.activities-nav-button-link {
+  text-decoration: none;
 }

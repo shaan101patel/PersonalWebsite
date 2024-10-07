@@ -1,52 +1,102 @@
 /* Contact.css */
 
 .contact-page {
-  padding-top: 80px;
-  color: var(--text-color);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
 }
 
-.contact-page h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--accent-color);
+/* Flex container similar to .content-container in Home */
+.contact-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  height: 100%;
 }
 
-.contact-page ul {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
+/* Left Section for Contact Details */
+.contact-details-section {
+  text-align: left;
+  flex: 0.7;
+  color: white;
 }
 
-.contact-page li {
-  font-size: 18px;
-  line-height: 2;
-  margin-bottom: 10px;
+.contact-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.contact-item {
   display: flex;
   align-items: center;
+  margin-bottom: 30px; /* Space between items */
 }
 
-.contact-page li a {
-  color: var(--accent-color);
+.contact-image-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #ff66b2; /* Pink color */
+  border-radius: 15px; /* Rounded corners */
+  margin-right: 20px;
+}
+
+.contact-text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-subheading {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.contact-link {
+  color: #ff66b2; /* Pink color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.contact-item p {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* Right Section for Navigation Buttons */
+.contact-button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between buttons */
+  align-items: center;
+  flex: 0;
+}
+
+/* Shared button styling for transparent background */
+.contact-nav-button {
+  color: white;
+  border: 2px solid white;
+  padding: 49px 30px; /* Adjust padding for spacing */
+  font-size: 1.5em; /* Font size */
+  cursor: pointer;
+  border-radius: 38px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  text-align: center;
+  width: 500px; /* Button width */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.contact-nav-button-link {
   text-decoration: none;
-}
-
-.contact-page li a:hover {
-  text-decoration: underline;
-}
-
-.contact-page li::before {
-  content: '•';
-  color: var(--accent-color);
-  margin-right: 10px;
-}
-
-@media (max-width: 768px) {
-  .contact-page h1 {
-    font-size: 32px;
-  }
-
-  .contact-page li {
-    font-size: 16px;
-  }
 }
