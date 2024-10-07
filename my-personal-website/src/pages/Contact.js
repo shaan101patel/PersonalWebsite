@@ -22,23 +22,35 @@ function Contact() {
         >
           <h1 className="contact-title">Contact Me</h1>
 
-          {/* Contact Details Sections with Pink Placeholders */}
+          {/* Contact Details Sections with Images */}
           <div className="contact-item">
-            <div className="contact-image-placeholder"></div>
+            <img
+              src={require('../assets/gmail.png')}
+              alt="Email"
+              className="contact-image"
+            />
             <div className="contact-text-content">
               <h2 className="contact-subheading">Email:</h2>
               <p>shaan101patel@gmail.com</p>
             </div>
           </div>
           <div className="contact-item">
-            <div className="contact-image-placeholder"></div>
+            <img
+              src={require('../assets/phone-icon.png')}
+              alt="Phone"
+              className="contact-image"
+            />
             <div className="contact-text-content">
               <h2 className="contact-subheading">Phone:</h2>
               <p>(678) 699-6118</p>
             </div>
           </div>
           <div className="contact-item">
-            <div className="contact-image-placeholder"></div>
+            <img
+              src={require('../assets/LinkedIn_logo_initials.png')}
+              alt="LinkedIn"
+              className="contact-image"
+            />
             <div className="contact-text-content">
               <h2 className="contact-subheading">LinkedIn:</h2>
               <a href="https://www.linkedin.com/in/shaanpatel25/" className="contact-link">
@@ -47,11 +59,15 @@ function Contact() {
             </div>
           </div>
           <div className="contact-item">
-            <div className="contact-image-placeholder"></div>
+            <img
+              src={require('../assets/github-icon.png')}
+              alt="GitHub"
+              className="contact-image"
+            />
             <div className="contact-text-content">
               <h2 className="contact-subheading">GitHub:</h2>
               <a href="https://github.com/shaan101patel" className="contact-link">
-                Your GitHub
+                shaan101patel
               </a>
             </div>
           </div>
@@ -62,7 +78,7 @@ function Contact() {
           className="contact-button-section"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 8 }}
+          transition={{ duration: 3 }}
         >
           <Link to="/" className="contact-nav-button-link">
             <button className="contact-nav-button">Home</button>
@@ -83,4 +99,3 @@ function Contact() {
 }
 
 export default Contact;
-
