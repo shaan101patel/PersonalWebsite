@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d85c7ca7.css",
+    "main.js": "/static/js/main.d9b26178.js",
+    "static/media/profilepic.JPG": "/static/media/profilepic.aae752565e64880324e7.JPG",
+    "static/media/THD_logo.jpg": "/static/media/THD_logo.40e1e97b76842ef5773a.jpg",
+    "static/media/soco.jpeg": "/static/media/soco.be3b777e569548482996.jpeg",
+    "static/media/chess.png": "/static/media/chess.458ecafd17bd1d959ca9.png",
+    "static/media/ICX.png": "/static/media/ICX.74d35f7970021c503667.png",
+    "static/media/Color-University-of-Georgia-Logo.jpg": "/static/media/Color-University-of-Georgia-Logo.3683856d511d19b315e2.jpg",
+    "static/media/chef.png": "/static/media/chef.f9b0a396c18e811a6db9.png",
+    "static/media/BrittanySignature.ttf": "/static/media/BrittanySignature.0d8ad040c68381fe6600.ttf",
+    "static/media/github-icon.png": "/static/media/github-icon.961783fed18b783d9bdb.png",
+    "static/media/akpsi.jpeg": "/static/media/akpsi.f49ce41aa37b8e1dd899.jpeg",
+    "static/media/LinkedIn_logo_initials.png": "/static/media/LinkedIn_logo_initials.68ac41e1459436bfd38f.png",
+    "index.html": "/index.html",
+    "main.d85c7ca7.css.map": "/static/css/main.d85c7ca7.css.map",
+    "main.d9b26178.js.map": "/static/js/main.d9b26178.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d85c7ca7.css",
+    "static/js/main.d9b26178.js"
+  ]
+}
