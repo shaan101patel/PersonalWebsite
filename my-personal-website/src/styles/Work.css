@@ -59,15 +59,16 @@
   flex-direction: column;
 }
 
-.work-subheading {
-  font-size: 1.5em;
-  margin: 0;
-}
-
 .work-subheading-link {
   text-decoration: none;
-  color: white;
+  color: #00bfff; /* Bright blue color */
+  transition: color 0.3s; /* Smooth color change */
 }
+
+.work-subheading-link:hover {
+  color: #007acc; /* Slightly darker blue on hover */
+}
+
 
 .work-text-content p {
   font-size: 1em;

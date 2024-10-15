@@ -30,11 +30,18 @@ function ResearchProjects() {
               className="research-image"
             />
             <div className="research-text-content">
-              <Link to="http://thinc.cs.uga.edu/" className="research-subheading-link">
+              {/* External Link for Computer Vision Research */}
+              <a
+                href="http://thinc.cs.uga.edu/"
+                className="research-subheading-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h2 className="research-subheading">Computer Vision Research</h2>
-              </Link>
-              <p>At the Intelligent Thought and Action Lab (THINC) Lab, I focused on advanced AI research involving the YOLOv8 model for image recognition. Working closely with a master's student, I managed a dataset of over 8,000 images and created custom Python scripts to streamline data handling. By leveraging a GPU-enabled setup in a remote Conda environment, I reduced the YOLOv8 model training time from over 30 days to under 2 days.
-</p>
+              </a>
+              <p>
+              At the Intelligent Thought and Action Lab (THINC) Lab, I focused on advanced AI research involving the YOLOv8 model for image recognition. Working closely with a master's student, I managed a dataset of over 8,000 images and created custom Python scripts to streamline data handling. By leveraging a GPU-enabled setup in a remote Conda environment, I reduced the YOLOv8 model training time from over 30 days to under 2 days.
+              </p>
             </div>
           </div>
           <div className="research-item">
@@ -44,11 +51,18 @@ function ResearchProjects() {
               className="research-image"
             />
             <div className="research-text-content">
-              <Link to="https://docs.google.com/document/d/1p190W680R4snqRxC6JjE9QJHoNAy_flXSph-5deWTx0/edit?usp=sharings" className="research-subheading-link">
+              {/* External Link for Literature Review */}
+              <a
+                href="https://docs.google.com/document/d/1p190W680R4snqRxC6JjE9QJHoNAy_flXSph-5deWTx0/edit?usp=sharings"
+                className="research-subheading-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h2 className="research-subheading">Literature Review of AI's Effect on Databases</h2>
-              </Link>
-              <p>Abstract: The rise of Artificial Intelligence (AI) is transforming how we manage and integrate databases. The transition from traditional database systems to AI-enhanced methodologies, emphasizing the emergence of vector databases and Retrieval Augmented Generation (RAG) frameworks. This shift not only improves data accessibility and analytics but can also transform business applications, to service both business to business and business to consumer needs. Augmented Data Management (ADM) systems reduce the burden of data cleansing and preparation while improving data accuracy and usability. The revolutionary impact of AI in analytics, facilitate real-time insights and predictive modeling. Collectively, these advancements signify a complete shift in how data is viewed, managed, and utilized.
-</p>
+              </a>
+              <p>
+                Abstract: The rise of Artificial Intelligence (AI) is transforming how we manage and integrate databases. The transition from traditional database systems to AI-enhanced methodologies, emphasizing the emergence of vector databases and Retrieval Augmented Generation (RAG) frameworks. This shift not only improves data accessibility and analytics but can also transform business applications, to service both business to business and business to consumer needs. Augmented Data Management (ADM) systems reduce the burden of data cleansing and preparation while improving data accuracy and usability...
+              </p>
             </div>
           </div>
           <div className="research-item">
@@ -58,10 +72,18 @@ function ResearchProjects() {
               className="research-image"
             />
             <div className="research-text-content">
-              <Link to="https://github.com/j40769/Movies1" className="research-subheading-link">
+              {/* External Link for Movie Booking Application */}
+              <a
+                href="https://github.com/shaan101patel/FrontEndMB"
+                className="research-subheading-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h2 className="research-subheading">Full Stack Movie Booking Application</h2>
-              </Link>
-              <p>The Cinema E-Booking System is a web-based application designed to facilitate online movie ticket booking, providing users with information on movies, showtimes, and allowing them to book and pay for their tickets online. The system also allows administrators to manage movies, ticket prices, and user information effectively</p>
+              </a>
+              <p>
+                The Cinema E-Booking System is a web-based application designed to facilitate online movie ticket booking, providing users with information on movies, showtimes, and allowing them to book and pay for their tickets.
+              </p>
             </div>
           </div>
         </motion.div>
@@ -73,6 +95,7 @@ function ResearchProjects() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2 }}
         >
+          {/* Internal Navigation Links */}
           <Link to="/" className="research-nav-button-link">
             <button className="research-nav-button">Home</button>
           </Link>
